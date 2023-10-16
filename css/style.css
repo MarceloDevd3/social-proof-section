@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-size: 0.9375em;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+--Vry-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+.card-container {
+    content: ' ';
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    bottom: 5px;
+    width: 330px;
+    z-index: 11;
+}
+
+
+.row-01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.header-info h1 {
+    font-size: 2.1em;
+    width: 75%;
+    color: var(--Vry-Dark-Magenta);
+}
+
+.card {
+    color: var(--Light-Grayish-Magenta);
+}
+
+.header-info p {
+    width: 80%;
+    color: var(--Dark-Grayish-Magenta) ;
+    line-height: 20px;
+}
+
+.header-info > h1, p {
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+
+.starts-block {
+    width: 100%;
+    padding: 0 25px;
+}
+
+.row {
+    background-color: var(--Light-Grayish-Magenta);
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.starts {
+    padding: 5px 0;
+}
+
+.purple {
+    font-weight: 700;
+    color: var(--Vry-Dark-Magenta);
+}
+
+
+.row-02 {
+    height:850px ;
+}
+
+.card  {
+    width: 330px;
+    height: 252px;
+    background-color: var(--Vry-Dark-Magenta);
+    margin: -10px 0;
+    transform: scale(0.9);
+    border-radius: 7px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    position: relative;
+    top: 10px;
+    left: 2px;
+}
+
+.profile > .circle-profile img {
+    border-radius: 50px;
+    transform: scale(0.5);
+}
+
+.profile-name {
+    position: relative;
+    top: 3px;
+}
+
+.profile-name p {
+    font-weight: 700;
+}
+
+.purple-txt {
+    color: var(--Soft-Pink);
+}
+
+.profile-name p > span {
+    font-weight: 100;
+}
+
+.info {
+    padding: 10px 25px ;
+}
+
+.info p {
+    font-size: 1.2em;
+    line-height: 22px;
+}
+
+
+
+
+.mobile, .desk {
+    max-width: 100%;
+}
+
+
+.mobile {
+    display: block;
+}
+
+.desk {
+    display: none;
+}
+.bg-bottom > img {
+    width: 100%;
+    position: absolute;
+    bottom: -700px;
+}
+
+
+@media (min-width:768px) {
+    
+    .mobile {
+        display: none;
+    }
+    
+    .desk {
+        display: block;
+    }
+
+    .bg-bottom > img {
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        bottom: 0px;
+    }
+
+   
+
+    body  {
+        overflow: hidden;
+    }
+
+    .card-container {
+        content: ' ';
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        bottom: 5px;
+        width: 1154px;
+    }
+
+    .row-01,.row-02 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+.row-01{
+    text-align: left;
+    margin: 5px 0;
+}
+
+.header-info {
+    width: 40%;
+}
+
+.header-info h1 {
+    font-size: 3em;
+}
+
+.header-info p {
+    width: 75%;
+}
+    
+.starts-block {
+    width: 475px;
+    padding: 0 20px;
+}
+
+.starts {
+    position: relative;
+    top: 4px;
+    padding: 10px;
+}
+
+.starts > img {
+    padding: 0 2px;
+}
+
+.subtitle {
+    position: relative;
+    left: -30px;
+}
+
+.row {
+    display: flex;
+     justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.row-2 {
+    position: relative;
+    left: 45px;
+}
+
+.row-3 {
+    position: relative;
+    left: 125px;
+}
+
+.row-02 {
+    height:300px ;
+} 
+
+.card:first-child {
+    margin-left: 40px;
+}
+
+.card  {
+    width: 350px;
+    height: 234px;
+    margin: 60px 0;
+}
+
+.card-1 {
+    position: relative;
+    top: 15px;
+}
+
+.card-2 {
+    position: relative;
+    top: 30px;
+}
+
+
+}
+
+@media (min-width:1440px) {
+  
+    .card-container {
+        content: ' ';
+        position: absolute;
+        top: 12%;
+        left: 10%;
+    }
+
+
+.card  {
+    transform: scale(1.0);
+    margin: 75px 25px;
+}
+
+    
+    .bg-bottom > img {
+        width: 100%;
+        position: absolute;
+        bottom: -150px;
+    }
+}
